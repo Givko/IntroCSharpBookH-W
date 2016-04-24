@@ -1,0 +1,3 @@
+c:\users\jivko\documents\visual studio 2013\Projects\Solution1\redica ot 4isla bez cikul\bin\Debug\redica ot 4isla bez cikul.exe.config
+c:\users\jivko\documents\visual studio 2013\Projects\Solution1\redica ot 4isla bez cikul\obj\Debug\redica ot 4isla bez cikul.exe
+c:\users\jivko\documents\visual studio 2013\Projects\Solution1\redica ot 4isla bez cikul\obj\Debug\redica ot 4isla bez cikul.pdb

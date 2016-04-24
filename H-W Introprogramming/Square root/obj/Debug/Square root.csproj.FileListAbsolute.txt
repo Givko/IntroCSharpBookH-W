@@ -1,0 +1,8 @@
+c:\users\jivko\documents\visual studio 2013\Projects\Solution1\Square root\bin\Debug\Square root.exe.config
+c:\users\jivko\documents\visual studio 2013\Projects\Solution1\Square root\bin\Debug\Square root.exe
+c:\users\jivko\documents\visual studio 2013\Projects\Solution1\Square root\bin\Debug\Square root.pdb
+c:\users\jivko\documents\visual studio 2013\Projects\Solution1\Square root\obj\Debug\Square root.exe
+c:\users\jivko\documents\visual studio 2013\Projects\Solution1\Square root\obj\Debug\Square root.pdb
+C:\Users\Jivko\Documents\Visual Studio 2013\Projects\Solution1.homework\Square root\bin\Debug\Square root.exe.config
+C:\Users\Jivko\Documents\Visual Studio 2013\Projects\Solution1.homework\Square root\obj\Debug\Square root.exe
+C:\Users\Jivko\Documents\Visual Studio 2013\Projects\Solution1.homework\Square root\obj\Debug\Square root.pdb
