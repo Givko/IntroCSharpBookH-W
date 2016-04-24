@@ -1,0 +1,5 @@
+AddStudent(Dqdo Mraz, 1A)
+AddStudent(Snejanka, 1A)
+AddStudent(Baba Matra, 3A)
+PrintStudents(1A)
+End.

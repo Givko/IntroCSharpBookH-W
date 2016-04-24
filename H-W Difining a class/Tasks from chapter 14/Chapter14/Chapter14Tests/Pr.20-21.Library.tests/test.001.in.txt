@@ -1,0 +1,10 @@
+AddBook(It, Stephen King, BulPres, 2001, BG14752534)
+AddBook(GreenMile, Stephen King, BulPres, 2004, BG14752534)
+AddBook(It2, Stephen King, BulPres, 2003, BG14752534)
+AddBook(Carrie, Stephen King, BulPres, 2001, BG14752534)
+AddBook(C# For Dummies, Nakov, TelerikPres, 0001, BG43296745)
+AddBook(The Snow Queen, Andersen, FeryPres, 1800, BG86476944)
+SearchAuthor(Stephen King)
+DeleteAllBooks(Stephen King)
+SearchAuthor(Stephen King)
+

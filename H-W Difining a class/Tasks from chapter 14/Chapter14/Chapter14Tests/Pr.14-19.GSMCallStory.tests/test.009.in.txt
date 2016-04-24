@@ -1,0 +1,5 @@
+AddCall(12/03/2012 13:05 20)
+AddCall(12/03/2012 15:05 40)
+CalculateSum(0.20)
+CalculateSum(0.10)
+End.

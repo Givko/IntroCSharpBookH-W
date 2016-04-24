@@ -1,0 +1,4 @@
+AddTeacher(Kumcho Valcho)
+AddDiscipline(Kumcho Valcho, Digostaciq, 1, 1)
+PrintTeacher(Anatomiq)
+End.

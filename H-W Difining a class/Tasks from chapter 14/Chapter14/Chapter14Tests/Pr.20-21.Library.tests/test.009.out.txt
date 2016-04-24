@@ -1,0 +1,24 @@
+Book added.
+Book added.
+Book added.
+Title: It
+Author: Stephen King
+Publisher: BulPres
+Year of publishing: 2001
+ISBN: BG14752534
+0 Book deleted.books deleted.
+Title: It
+Author: Stephen King
+Publisher: BulPres
+Year of publishing: 2001
+ISBN: BG14752534
+Title: It
+Author: Stephen King
+Publisher: BulPres
+Year of publishing: 2001
+ISBN: BG14752534
+
+0 Book deleted.books deleted.
+Unknown operation.
+Not found.
+Not found book on this author.

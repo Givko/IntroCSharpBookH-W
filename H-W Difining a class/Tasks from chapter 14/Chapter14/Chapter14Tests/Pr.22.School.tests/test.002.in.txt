@@ -1,0 +1,7 @@
+AddTeacher(Spqshtata Krasavica)
+AddTeacher(Hristo Stoichkov)
+AddTeacher(Lili Ivaniva)
+AddDiscipline(Spqshtata Krasavica,History,12,12)
+AddDiscipline(Hristo Stoichkov, sport, 11,11)
+AddDiscipline(Lili Ivanova, History,12,12)
+End.

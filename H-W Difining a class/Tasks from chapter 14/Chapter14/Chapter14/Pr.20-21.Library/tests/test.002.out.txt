@@ -1,0 +1,8 @@
+Book added.
+Book added.
+Book added.
+Title: C# For Dummies
+Author: Nakov
+Publisher: TelerikPres
+Year of publishing: 1
+ISBN: BG43296745

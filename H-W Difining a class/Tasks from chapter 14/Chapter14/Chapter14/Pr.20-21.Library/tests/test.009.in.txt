@@ -1,0 +1,13 @@
+AddBook(It, Stephen King, BulPres, 2001, BG14752534)
+AddBook(C# For Dummies, Nakov, TelerikPres, 0001, BG43296745)
+AddBook(The Snow Queen, Andersen, FeryPres, 1800, BG86476944)
+SearchAuthor(Stephen King)
+DeleteBook(It)
+SearchAuthor(Stephen King)
+SearchTitle(It)
+DeleteBook(It)
+ADDBOOK(It, Stephen King, BulPres, 2001, BG14752534)
+SearchTitle(Ittttt)
+SearchAuthor(STEPHEN KING)
+
+

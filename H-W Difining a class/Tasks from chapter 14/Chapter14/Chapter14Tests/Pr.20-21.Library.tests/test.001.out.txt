@@ -1,0 +1,28 @@
+Book added.
+Book added.
+Book added.
+Book added.
+Book added.
+Book added.
+Title: It
+Author: Stephen King
+Publisher: BulPres
+Year of publishing: 2001
+ISBN: BG14752534
+Title: GreenMile
+Author: Stephen King
+Publisher: BulPres
+Year of publishing: 2004
+ISBN: BG14752534
+Title: It2
+Author: Stephen King
+Publisher: BulPres
+Year of publishing: 2003
+ISBN: BG14752534
+Title: Carrie
+Author: Stephen King
+Publisher: BulPres
+Year of publishing: 2001
+ISBN: BG14752534
+4 Book deleted.
+Not found book on this author.

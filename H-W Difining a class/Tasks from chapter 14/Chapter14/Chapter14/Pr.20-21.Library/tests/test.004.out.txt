@@ -1,0 +1,9 @@
+Book added.
+Book added.
+Book added.
+Title: It
+Author: Stephen King
+Publisher: BulPres
+Year of publishing: 2001
+ISBN: BG14752534
+

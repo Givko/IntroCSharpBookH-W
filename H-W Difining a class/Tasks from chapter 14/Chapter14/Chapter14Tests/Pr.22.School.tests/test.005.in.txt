@@ -1,0 +1,9 @@
+AddStudent(Pepelqshka,1A)
+AddStudent(Princa, 1A)
+AddStudent(Prosqka,1A)
+AddStudent(Ariel, 2B)
+AddStudent(Pokahontas, 2B)
+PrintStudents(1A)
+PrintStudents(2B)
+PrintStudents(2A)
+End.
