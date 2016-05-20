@@ -4,18 +4,26 @@ class BinarySearch
 {
     static void Main(string[] args)
     {
-        int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,22, 23, 24, 25, 26, 27, 28, 29, 30 };
-        int element = int.Parse(Console.ReadLine());
+        int length = int.Parse(Console.ReadLine());
+        int[] numbers = new int[length];
         int maxIndex = numbers.Length;
         int minIndex = 0;
         int curMid;
-       
+        bool hasElement = true;
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            numbers[i] = int.Parse(Console.ReadLine());
+        }
+
+        int element = int.Parse(Console.ReadLine());
+
         for (int i = 0; i < numbers.Length / 2; i++)
         {
             curMid = (minIndex + maxIndex)/2;
             if (numbers[curMid] == element)
             {
-                Console.WriteLine("{0} is found on position {1}",element,curMid);
+                hasElement = false;
+                Console.WriteLine(curMid);
                 break;
             }
             else if (numbers[curMid]>element)
@@ -27,7 +35,10 @@ class BinarySearch
                 minIndex = curMid + 1;
             }
         }
-
+        if (hasElement)
+        {
+            Console.WriteLine(-1);
+        }
     }
 }
 

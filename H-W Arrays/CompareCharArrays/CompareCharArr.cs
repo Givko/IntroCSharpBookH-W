@@ -1,44 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CompareCharArrays
+class CompareCharArr
 {
-    class CompareCharArr
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        string array1 = Console.ReadLine();
+        string array2 = Console.ReadLine();
+
+        if (array1.CompareTo(array2) == 0)
         {
-            Console.Write("Enter the length of the char array: ");
-            int length = int.Parse(Console.ReadLine());
-            char[] letters1 = new char[length];
-            char[] letters2 = new char[length];
-            bool theFirstIsFirst = false;
-            Console.Write("Enter the first array: ");
-            
-            for (int i = 0; i < length; i++)
-            {
-                Console.WriteLine("Enter element number {0}: ");
-                letters1[i] = char.Parse(Console.ReadLine());
-            }
-            Console.Clear();
-            
-            Console.Write("Enter the second array: ");
-             for (int i = 0; i < length; i++)
-			{
-                letters2[i] = char.Parse(Console.ReadLine());
-			}
-
-             for (int i = 0; i < length; i++)
-             {
-                 if (letters1[i]>letters2[i])
-                 {
-                     theFirstIsFirst = true;
-                 }
-             }
-
-             Console.WriteLine(theFirstIsFirst ? "The first array is earlier." : "The second array is earlier.");
+            Console.WriteLine("=");
+        }
+        else if (array1.CompareTo(array2) == -1)
+        {
+            Console.WriteLine("<");
+        }
+        else
+        {
+            Console.WriteLine(">");
         }
     }
 }

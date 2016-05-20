@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitializingArray", "InitializingArray\InitializingArray.csproj", "{9E9D4826-1B60-43F4-BEF8-79080E40366A}"
 EndProject
@@ -42,6 +42,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19PrimesBetween1To10M", "19PrimesBetween1To10M\19PrimesBetween1To10M.csproj", "{F05F782D-5617-4E86-9473-B69C9CF8F6AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23Permutations", "23Permutations\23Permutations.csproj", "{D766C3E1-1F16-453D-8567-098467C07C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17MergeSort", "17MergeSort\17MergeSort.csproj", "{877E3E9A-B763-4CBA-A00A-CA0C336D365F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSeqOfEqualElInMatrix", "LongestSeqOfEqualElInMatrix\LongestSeqOfEqualElInMatrix.csproj", "{6C9EFC08-2111-4564-94BA-5143C486C5B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,14 @@ Global
 		{D766C3E1-1F16-453D-8567-098467C07C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D766C3E1-1F16-453D-8567-098467C07C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D766C3E1-1F16-453D-8567-098467C07C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877E3E9A-B763-4CBA-A00A-CA0C336D365F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877E3E9A-B763-4CBA-A00A-CA0C336D365F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877E3E9A-B763-4CBA-A00A-CA0C336D365F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877E3E9A-B763-4CBA-A00A-CA0C336D365F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9EFC08-2111-4564-94BA-5143C486C5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9EFC08-2111-4564-94BA-5143C486C5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9EFC08-2111-4564-94BA-5143C486C5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9EFC08-2111-4564-94BA-5143C486C5B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

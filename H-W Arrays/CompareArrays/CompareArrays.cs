@@ -1,40 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CompareArrays
+class CompareArrays
 {
-    class CompareArrays
+    static void Main()
     {
-        static void Main(string[] args)
+        int length = int.Parse(Console.ReadLine());
+        int[] numbers = new int[length];
+        int[] numbers2 = new int[length];
+        bool isSame = true;
+        
+        for (int i = 0; i < length; i++)
         {
-            Console.Write("Enter the length of the two arrays: ");
-            int length = int.Parse(Console.ReadLine());
-            int[] numbers = new int[length];
-            int[] numbers2 = new int[length];
-            bool isSame = true;
-
-            Console.WriteLine("Now fill the arrays: ");
-            for (int i = 0; i < length; i++)
-            {
-                Console.Write("Add the {0} element in the first array: ",i+1);
-                numbers[i] = int.Parse(Console.ReadLine());
-                Console.Write("Add the {0} element in the second array: ",i+1);
-                numbers2[i] = int.Parse(Console.ReadLine());
-                Console.Clear();
-            }
-
-            for (int index = 0; index < length; index++)
-            {
-                if (numbers[index]!=numbers2[index])
-                {
-                    isSame = false;
-                }
-            }
-            
-            Console.WriteLine(isSame);
+            numbers[i] = int.Parse(Console.ReadLine());
         }
+
+        for (int i = 0; i < length; i++)
+        {
+            numbers2[i] = int.Parse(Console.ReadLine());
+        }
+
+        for (int index = 0; index < length; index++)
+        {
+            if (numbers[index] != numbers2[index])
+            {
+                isSame = false;
+            }
+        }
+
+        Console.WriteLine(isSame?"Equal":"Not equal");
     }
 }
+

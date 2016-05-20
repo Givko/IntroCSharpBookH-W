@@ -10,17 +10,26 @@ namespace _19PrimesBetween1To10M
     {
         static void Main(string[] args)
         {
-            for (ulong i = 0; i < 10000000; i++)
+            long n = long.Parse(Console.ReadLine());
+            long biggestPrime = 0;
+
+            for (long i = n; i >= 0; i--)
             {
-                IsPrime(i);
+                if (CheckIsNumberPrime(i))
+                {
+                    biggestPrime = i;
+                    break;
+                }
             }
+            Console.WriteLine(biggestPrime);
         }
-        private static void IsPrime(ulong num)
+
+        private static bool CheckIsNumberPrime(long num)
         {
             bool IsPrime = true;
             if (num >= 2)
             {
-                for (uint i = 2; i <= Math.Sqrt(num); i++)
+                for (long i = (long)Math.Sqrt(num); i >= 2; i--)
                 {
                     if (num % i == 0)
                     {
@@ -32,11 +41,9 @@ namespace _19PrimesBetween1To10M
             {
                 IsPrime = false;
             }
-            if (IsPrime)
-            {
-                Console.Write("{0},",num);
-            }
 
+
+            return IsPrime;
         }
     }
 }

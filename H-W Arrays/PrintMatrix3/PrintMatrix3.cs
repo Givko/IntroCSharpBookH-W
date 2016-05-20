@@ -11,6 +11,7 @@ namespace PrintMatrix3
         static void Main(string[] args)
         {
             int size = int.Parse(Console.ReadLine());
+            char letter = char.Parse(Console.ReadLine());
             int[,] matrix = new int[size, size];
             int[] numbers = new int[size * size];
             int index = 0;
@@ -22,19 +23,110 @@ namespace PrintMatrix3
                 numbers[i] = i + 1;
             }
 
+            switch (letter)
+            {
+                case 'a':
+                    FillMatrixCase1(matrix, numbers);
+                    PrintingMatrix(matrix);
+                    break;
+                case 'b':
+                    FillMatrixCase2(matrix,numbers);
+                    PrintingMatrix(matrix);
+                    break;
+                case 'c':
+                    InsertInMatrixToMainDiagonal(matrix, row, col, ref index, numbers);
+                    InsertInMatrixAfterMainDiagonal(matrix, row, col, ref index, numbers);
+                    PrintingMatrix(matrix);
+                    break;
+                case 'd':
+                    FillMatrixCase3(matrix);
+                    PrintingMatrix(matrix);
+                    break;
+                default:
+                    break;
+            }
 
-            InsertInMatrixToMainDiagonal(matrix, size, row, col,ref index, numbers);
-            InsertInMatrixAfterMainDiagonal(matrix, size, row, col,ref index, numbers);
-            PrintingMatrix(matrix, size);
 
         }
 
-        private static void InsertInMatrixToMainDiagonal(int[,] matrix, int size, int row, int col,ref int index, int[] numbers)
+        private static void FillMatrixCase3(int[,] matrix)
         {
-            for (int i = size - 1; i >= 0; i--)
+            int col = 0;
+            int row = 0;
+            int direction = 0;
+            int side = matrix.GetLength(0);
+            int[,] navigator = {
+                                { 1, 0 },
+                                { 0, 1 },
+                                { -1, 0 },
+                                { 0, -1 }
+                                };
+            for (int iterator = 1; iterator <= side * side; iterator++)
+            {
+                matrix[col, row] = iterator;
+                int nextXcoord = col + navigator[direction, 0];
+                int nextYcoord = row + navigator[direction, 1];
+                if (nextXcoord == side || nextXcoord == -1 || nextYcoord == side || nextYcoord == -1 || matrix[nextXcoord, nextYcoord] != 0)
+                {
+                    direction++;
+                    direction %= 4;
+                }
+                col += navigator[direction, 0];
+                row += navigator[direction, 1];
+            }
+        }
+
+        private static void FillMatrixCase1(int[,] matrix, int[] numbers)
+        {
+            int index = 0;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+
+                    matrix[j, i] = numbers[index];
+                    index++;
+                }
+            }
+        }
+
+        private static void FillMatrixCase2(int[,] matrix,int[] numbers)
+        {
+            int index = 0;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+
+                if (i % 2 == 0)
+                {
+                    for (int j = 0; j < matrix.GetLength(1); j++)
+                    {
+                        matrix[j, i] = numbers[index];
+                        index++;
+                    }
+                }
+                else if (i % 2 == 1)
+                {
+                    for (int j = matrix.GetLength(1) - 1; j >= 0; j--)
+                    {
+                        matrix[j, i] = numbers[index];
+                        index++;
+                    }
+                }
+
+
+            }
+
+
+        }
+
+        private static void InsertInMatrixToMainDiagonal(int[,] matrix, int row, int col,ref int index, int[] numbers)
+        {
+            for (int i = matrix.GetLength(0) - 1; i >= 0; i--)
             {
                 // Inserts numbers in the matrix til the main diagonal including
-                for (int j = 0; j < size; j++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
                     if (j == 0)
                     {
@@ -44,7 +136,7 @@ namespace PrintMatrix3
 
                     matrix[row, col] = numbers[index];
                     index++;
-                    if (row == size - 1)
+                    if (row == matrix.GetLength(0) - 1)
                     {
                         break;
                     }
@@ -55,11 +147,11 @@ namespace PrintMatrix3
             }    
         }
 
-        private static void PrintingMatrix(int[,] matrix, int size)
+        private static void PrintingMatrix(int[,] matrix)
         {
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < size; j++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
                     Console.Write("{0, -3}", matrix[i, j]);
                 }
@@ -67,14 +159,14 @@ namespace PrintMatrix3
             }
         }
 
-        private static void InsertInMatrixAfterMainDiagonal(int[,] matrix, int size, int row, int col,ref int index, int[] numbers)
+        private static void InsertInMatrixAfterMainDiagonal(int[,] matrix, int row, int col,ref int index, int[] numbers)
         {
 
 
             // instering numbers after the main diagonal
-            for (int i = 1; i < size; i++)
+            for (int i = 1; i < matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < size; j++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
                     if (j == 0)
                     {
@@ -84,7 +176,7 @@ namespace PrintMatrix3
 
                     matrix[row, col] = numbers[index];
                     index++;
-                    if (col == size - 1)
+                    if (col == matrix.GetLength(1) - 1)
                     {
                         break;
                     }

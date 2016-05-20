@@ -15,21 +15,21 @@ class Program
             {
                 if (year % 400 == 0)
                 {
-                    Console.WriteLine("Leap year!");
+                    Console.WriteLine("Leap");
                 }
                 else
                 {
-                    Console.WriteLine("Not a Leap year");
+                    Console.WriteLine("Common");
                 }
             }
             else
             {
-                Console.WriteLine("Leap year!");
+                Console.WriteLine("Leap");
             }
         }
         else
         {
-            Console.WriteLine("Not a Leap year!");
+            Console.WriteLine("Common");
         }
     }
 }

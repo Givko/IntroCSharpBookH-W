@@ -1,22 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace InitializingArray
+class InitializingArray
 {
-    class InitializingArray
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            int[] numbers = new int[20];
+        int n = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                numbers[i] = i * 5;
-                Console.WriteLine(numbers[i]);
-            }
+        int[] numbers = new int[n];
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            numbers[i] = i * 5;
+            Console.WriteLine(numbers[i]);
         }
     }
 }
+

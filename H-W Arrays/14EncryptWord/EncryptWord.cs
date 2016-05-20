@@ -7,7 +7,6 @@ class EncryptWord
         char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
         string word = Console.ReadLine();
         word = word.ToLower();
-        string wordAsIndexes = "";
 
         for (int i = 0; i < word.Length; i++)
         {
@@ -20,7 +19,7 @@ class EncryptWord
                 curMid = (minIndex + maxIndex) / 2;
                 if (alphabet[curMid] == word[i])
                 {
-                    wordAsIndexes += curMid;
+                    Console.WriteLine(curMid);
                     break;
                 }
                 else if (alphabet[curMid] > word[i])
@@ -33,7 +32,6 @@ class EncryptWord
                 }
             }
         }
-        Console.WriteLine("{0}",wordAsIndexes);
     }
 }
 

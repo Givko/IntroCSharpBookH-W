@@ -6,7 +6,6 @@ class LongestIncreasingSequence
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter length of the array: ");
         int length = int.Parse(Console.ReadLine());
         double[] numbers = new double[length];
         int currentSequence = 0;
@@ -17,14 +16,13 @@ class LongestIncreasingSequence
         //Input elements in array
          for (int i = 0; i < numbers.Length; i++)
          {
-             Console.Write("Enter the {0} element in the array.", i + 1);
              numbers[i] = double.Parse(Console.ReadLine());
          }
 
         //Finding the longest increasing subsequence
         for (int i = 0; i < numbers.Length; i++)
         {
-            counter = 0;
+            counter = 1;
             for (int j = i; j < numbers.Length-1; j++)
             {
                 if (numbers[j] < numbers[j+1])
@@ -47,15 +45,7 @@ class LongestIncreasingSequence
             }
         }
 
-        //Printing the bestSequence        
-        Console.Write("The longest sequence in the array is:{ ");
-        while (bestSequence >= 0)
-        {
-            Console.Write(" {0,2},", numbers[bestIndex]);
-            bestSequence--;
-            bestIndex++;
-        }
-        Console.WriteLine("}");
+        Console.WriteLine(bestSequence);
     }
 }
 
